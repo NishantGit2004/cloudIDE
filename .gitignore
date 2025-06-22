@@ -1,0 +1,24 @@
+# Node modules in server
+/server/node_modules/
+
+# Logs
+/server/*.log
+/server/npm-debug.log*
+/server/yarn-debug.log*
+/server/yarn-error.log*
+
+# Environment files
+/server/.env
+/server/.env.*
+
+# Build outputs (if using ts or bundlers later)
+server/dist/
+server/build/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+# Editor/IDE configs
+.vscode/
+.idea/

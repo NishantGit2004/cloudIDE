@@ -1,0 +1,114 @@
+.playground-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.project-name {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  align-items: center;
+  font-size: larger;
+  font-weight: 900;
+  padding: 8px 16px;
+  width: 100%;
+  background-color: rgb(15, 13, 13);
+  border-radius: 10px;
+  border: 1px solid white;
+  color: white;
+  align-self: center;
+}
+
+.project-name span {
+  color: green;
+}
+
+.main-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 100%;
+}
+
+.editor-container {
+  display: flex;
+  gap: 5px;
+  overflow: hidden;
+}
+
+.files {
+  width: 20vw;
+  overflow-y: auto;
+}
+
+.editor {
+  flex: 1;
+  height: 100%;
+  overflow-y: auto;
+  padding-right: 18px;
+}
+
+.terminal-container {
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #1e1e1e;
+  color: white;
+}
+
+.resizer {
+  height: 5px;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resizer-handle {
+  width: 100px;
+  height: 100%;
+  background: #555;
+  border-radius: 4px;
+  cursor: row-resize;
+  user-select: none;
+}
+
+.file-name {
+  padding: 0 45px 3px;
+  /* border: 1px solid white; */
+}
+
+.sidebar-resizer {
+  width: 5px;
+  background-color: #555;
+  cursor: col-resize;
+  user-select: none;
+}
+
+.resizer {
+  height: 5px;
+  position: relative;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.resizer-handle {
+  width: 100px;
+  height: 100%;
+  background: #555;
+  border-radius: 4px;
+  cursor: row-resize;
+  user-select: none;
+}
+
+.files {
+  overflow-y: auto;
+  height: 100%;
+  background-color: #1f1f1f;
+  color: white;
+}
