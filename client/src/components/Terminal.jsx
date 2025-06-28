@@ -1,14 +1,15 @@
 import {Terminal as XTerminal} from '@xterm/xterm'
 import { useEffect } from 'react'
 import { useRef } from 'react'
-import socket from '../socket'
 import '@xterm/xterm/css/xterm.css'
 
-const Terminal = () => {
+const Terminal = ( { socket } ) => {
     const terminalRef = useRef()
     const isRendered = useRef(false)
 
     useEffect(() => {
+        if (!socket) return
+
         if (isRendered.current) return 
         isRendered.current = true
 
@@ -29,7 +30,7 @@ const Terminal = () => {
         return () => {
             socket.off('termianl:data', onTermianlData)
         }
-    })
+    }, [socket])
 
     return (
         <>

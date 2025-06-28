@@ -22,3 +22,6 @@ Thumbs.db
 # Editor/IDE configs
 .vscode/
 .idea/
+
+# User Projects
+/server/projects

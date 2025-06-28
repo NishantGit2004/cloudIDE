@@ -1,0 +1,198 @@
+:root {
+  --bg: #1e1e2f;
+  --card-bg: #2c2c3e;
+  --text: #f1f1f1;
+  --subtext: #a0a0b0;
+  --primary: #3a86ff;
+  --success: #06d6a0;
+  --border: #3a3a50;
+}
+
+.dashboard-container {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  min-height: 100vh;
+  color: var(--text);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #181824;
+  padding: 15px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.nav-right {
+  position: relative;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid var(--border);
+}
+
+.profile-popup {
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background: #252535;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.4);
+  border-radius: 8px;
+  z-index: 100;
+  width: 200px;
+  color: var(--text);
+}
+
+.profile-popup h4 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.profile-popup button {
+  margin-top: 10px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.project-section {
+  padding: 40px;
+}
+
+.project-section h2 {
+  margin-bottom: 20px;
+}
+
+.project-input {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.project-input input {
+  padding: 10px;
+  font-size: 16px;
+  flex: 1;
+  background: #28283b;
+  border: 1px solid var(--border);
+  color: var(--text);
+  border-radius: 6px;
+}
+
+.project-input input::placeholder {
+  color: #aaa;
+}
+
+.project-input button {
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.project-card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+  transition: 0.3s;
+  border: 1px solid var(--border);
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+}
+
+.project-card h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.project-card .path {
+  color: var(--subtext);
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.open-btn {
+  background-color: var(--success);
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.logout-btn {
+  background-color: #e74c3c !important;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #c0392b !important;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.open-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}

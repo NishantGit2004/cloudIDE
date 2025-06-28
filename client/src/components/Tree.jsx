@@ -31,7 +31,7 @@ const FileTreeNode = ({ fileName, nodes, onSelect, path }) => {
 
       {isDirectory && expanded && (
         <ul className="tree-children">
-          {Object.keys(nodes).map((child) => (
+          {Object?.keys(nodes).map((child) => (
             <li key={child}>
               <FileTreeNode
                 fileName={child}
