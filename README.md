@@ -11,7 +11,7 @@ This project is built to solve the "it works on my machine" problem by providing
 * **Integrated Terminal**: A fully functional terminal running in a secure Docker container, giving you shell access to your project's environment.
 * **Dynamic File Explorer**: A collapsible file tree to easily navigate your project's directory structure.
 * **Secure User Authentication**: A complete user registration and login system using JWT (JSON Web Tokens) for secure access.
-* [cite_start]**Containerized Environments**: Each project runs in its own isolated **Docker container**, ensuring security and dependency management without conflicts[cite: 9].
+* **Containerized Environments**: Each project runs in its own isolated **Docker container**, ensuring security and dependency management without conflicts.
 * **Real-time File Syncing**: File changes are automatically detected and synced, reflecting in the file explorer in real-time.
 
 ## Tech Stack
@@ -25,6 +25,10 @@ This project is built with a modern, full-stack JavaScript architecture.
 | **Authentication**| JWT (Access & Refresh Tokens), bcryptjs, cookie-parser                                |
 | **Architecture** | **Docker**, `node-pty` for pseudo-terminal access, `chokidar` for file watching       |
 | **Database** | MongoDB                                                                               |
+
+## System Architecture Diagram
+
+![CloudIDE System Architecture](https://github.com/NishantGit2004/cloudIDE/blob/main/SystemArchitecture.png?raw=true)
 
 ## Architecture Deep Dive: Docker at the Core
 
@@ -53,8 +57,8 @@ Follow these instructions to get a local copy up and running.
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/NishantGit2004/cloudIDE.git
-    cd cloudide
+    git clone [https://github.com/NishantGit2004/cloudIDE.git](https://github.com/NishantGit2004/cloudIDE.git)
+    cd cloudIDE
     ```
 
 2.  **Build the Custom Docker Image:**
