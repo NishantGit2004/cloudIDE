@@ -53,7 +53,7 @@ Follow these instructions to get a local copy up and running.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/nishantgit204/cloudide.git](https://github.com/nishantgit204/cloudide.git)
+    git clone https://github.com/NishantGit2004/cloudIDE.git
     cd cloudide
     ```
 
